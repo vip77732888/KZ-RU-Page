@@ -95,6 +95,12 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 1200px) {
+    .slick-next {
+        display: none;
+    }
+}
+
 [dir='rtl'] .slick-next {
     right: auto;
     left: -25px;
@@ -128,8 +134,8 @@
 
 .main__item .slider .slick-dots {
     bottom: 0;
-    top: 41%;
-    left: 34%;
+    top: 82%;
+    left: 23%;
     width: auto;
 }
 

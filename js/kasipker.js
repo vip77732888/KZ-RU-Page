@@ -10,25 +10,12 @@ function toggleAcordeon() {
     });
 };
 //Slider
-const slider = document.getElementById('slider');
-const dot1 = document.getElementById('dot1');
-const dot2 = document.getElementById('dot2');
-const dot3 = document.getElementById('dot3');
-const dotActive = document.getElementById('active');
-
-dot1.onclick = function() {
-    slider.style.transform = 'translate(0)';
-    active.style.top = '0px';
-}
-dot2.onclick = function() {
-    slider.style.transform = 'translate(-100%)';
-    active.style.top = '0px';
-}
-dot3.onclick = function() {
-    slider.style.transform = 'translate(50%)';
-    active.style.top = '0px';
-}
-dot4.onclick = function() {
-    slider.style.transform = 'translate(-75%)';
-    active.style.top = '0px';
-}
+$('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    infinite: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+})
